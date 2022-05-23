@@ -12,6 +12,12 @@ class HomeController extends Controller
         $perfil = "Dev";
         $empresa = "jljmcode";
 
-        return view('home');
+        $dados = [
+            'usuario'=>$usuario,
+            'perfil'=>$perfil,
+            'empresa'=>$empresa
+        ];
+
+        return view('home',$dados);
     }
 }
