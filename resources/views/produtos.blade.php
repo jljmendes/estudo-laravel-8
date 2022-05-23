@@ -1,16 +1,21 @@
 <h1>Página de Produtos</h1>
 <hr>
-<form method="get">
+<form method="post">
     @csrf
 
-    <b>Produtos</b>
+    <b>Produto</b>
     <input type="text" name="produto"><br><br>
 
     <b>Preço</b>
-    <input type="text" name="produto"><br><br>
+    <input type="text" name="preco"><br><br>
 
     <b>Categoria</b>
-    <input type="text" name="produto"><br><br>
+    <input type="text" name="categoria"><br><br>
 
     <input type="submit" value="Salvar">
 </form>
+
+<hr>
+<label>Produto: {{ $produto }}</label><br>
+<label>Preço: {{ $preco }}</label><br>
+<label>Categoria: {{ $categoria }}</label><br>
